@@ -4,6 +4,8 @@
 ``` pip install pystray ``` \
 ``` pip install requests ``` \
 ``` pip install beautifulsoup4 ```
+
+
 هدف کلی برنامه اطلاع از مقدار شاخص کیفیت هوای تهران می باشد.
 با اجرای چند خط کد **web scrapping** ساده با استفاده از کتابخانه **beautifulsoup4** مقدار شاخص را از سایت [کنترل کیفیت هوا](https://airnow.tehran.ir/) می توان پیدا کرد.
 
