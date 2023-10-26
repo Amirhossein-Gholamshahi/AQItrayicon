@@ -30,8 +30,14 @@
 اگر به هر دلیلی خواستید از برنامه خارج شوید، گزینه **Exit** تمامی **process** ها را **terminate** می کند و از برنامه خارج می شود.
 
 <p >
-<img src="additionalfiles/trayiconmenu."  width="500"/> 
-<img src="additionalfiles/notification.jpg"  width="500"/>
+<img src="additionalfiles/trayiconmenu"> 
+
+
+  
+<img src="additionalfiles/notification.jpg">
+
+
+
 </p>
 
 
