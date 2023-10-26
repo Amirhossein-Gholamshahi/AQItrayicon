@@ -33,9 +33,9 @@
 <img src="additional files/trayiconmenu.jpg"> 
 
 
+---
   
 <img src="additional files/notification.jpg">
-
 
 
 </p>
