@@ -29,14 +29,13 @@
 
 اگر به هر دلیلی خواستید از برنامه خارج شوید، گزینه **Exit** تمامی **process** ها را **terminate** می کند و از برنامه خارج می شود.
 
+---
 <p >
 <img src="additional files/trayiconmenu.jpg"> 
-
 
 ---
   
 <img src="additional files/notification.jpg">
-
 
 </p>
 
