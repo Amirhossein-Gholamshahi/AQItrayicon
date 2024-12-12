@@ -31,7 +31,7 @@ def get_current_aqi():  # gets the current AQI value from url
     try:  # try and except for probable connection loss
         r = requests.get(url)
         soup = BeautifulSoup(r.text, "html.parser")
-        tag = int(soup.find_all("span")[18].text)  # gets current AQI from the url
+        tag = int(soup.findAll('span', class_='info-box-number aqival')[1].text)  # gets current AQI from the url
         if tag >= 150:
             show_notif("Current AQI", "Unhealthy", resource_path("additional files/AQIMORE150.jpg"), tag)
         if 100 <= tag < 150:
@@ -51,7 +51,7 @@ def get_last_24hrs_aqi():  # gets the average of last days AQI  from url
     try:  # try and except for probable connection loss
         r = requests.get(url)
         soup = BeautifulSoup(r.text, "html.parser")
-        tag = int(soup.find_all("span")[13].text)  # gets last 24-hrs AQI from the url
+        tag = int(soup.findAll('span', class_='info-box-number aqival')[0].text)  # gets last 24-hrs AQI from the url
         if tag >= 150:
             show_notif("Last 24 hrs AQI", "Unhealthy", resource_path("additional files/AQIMORE150.jpg"), tag)
         if 100 <= tag < 150:
@@ -73,7 +73,7 @@ def get_notif_everyn(n):  # send notification every n minutes
         try:  # try and except for probable connection loss
             r = requests.get(url)
             soup = BeautifulSoup(r.text, "html.parser")
-            tag = int(soup.find_all("span")[18].text)  # gets AQI from the url
+            tag = int(soup.findAll('span', class_='info-box-number aqival')[1].text)  # gets AQI from the url
             if tag >= 150:
                 show_notif("Current AQI", "Unhealthy", resource_path("additional files/AQIMORE150.jpg"),tag)
                 time.sleep(sec)
